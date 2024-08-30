@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palu Group - Bookkeeping Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'> -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.rtl.min.css'>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img class="logo" src="assets/LogoPalu.svg" alt="Logo">
+      <button id="abrir" class="abrir-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6h18M3 12h18" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 18L18 6M6 6l12 12" stroke="#000" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#">Softwares</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="boton-2">
+          <div><a class="txtboton-2" href="https://www.google.com">Book a Meeting</a></div>
+          <img loading="lazy" src="assets/Frame19.svg" style="width: 25px; height: 25px;" class="img-2" />
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="hero" style="background-image: url(assets/Hero.png);">
+    <div class="div-10">
+      <div class="container">
+        <div class="empower-growth-get-palu-group-experts">
+          Empower Growth.
+          <br />
+          <span style="font-weight: 700">Get Palu Group® Experts.</span>
+        </div>
+        <div class="div-11">
+          <div class="bookkeeping-and">
+            <span style="font-weight: 700">Bookkeeping</span>
+            and
+          </div>
+          <div class="financial-services">financial services</div>
+          <div class="heading-desktop">
+            to
+            <span class="highlight" style="font-weight: 700">
+              drive
+            </span>
+            your business
+          </div>
+        </div>
+
+
+        <div class="div-12">
+         <div class="buttons-row">
+          <div class="button-container1">
+            <button class="btn1" onclick="transformButton1()">Get in touch <img src="assets/icon-message.svg"
+                alt=""></button>
+          </div>
+
+          <form action="/" target="_blank" class="input-container1">
+            <input type="email" name="email" id="messageInput1" placeholder="Type your email here..." required>
+            <button type="submit" onclick="sendMessage1()"><img style="padding-top: 5px;"
+                src="assets/icon-send-black.svg" alt=""></button>
+
+            <input type="hidden" name="_feedback.success.title" value="Thanks, go back to our website" />
+          </form>
+
+
+          <div class="success-message1" id="successMessage1">
+            Your message has been <br> <b>sent successfully!</b>
+          </div>
+
+          <script src="buttonScript.js"></script>
+          <div class="boton-2-2">
+            <div><a class="txtboton-2-2" href="https://www.google.com">Book a Meeting</a></div>
+            <img loading="lazy" src="assets/icon-book.svg" style="width: 25px; height: 25px;" class="img-4" />
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+
+      <div class="container">
+        <div class="row">
+      <img class="img-5" src="assets/Group1.png">
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+  <!-- SLIDER-->
+
+  <section class="slider-container">
+    <h2 class="slider-title">Software Solutions</h2>
+    <div class="slider">
+        <div class="slide">
+            <div class="slide-text">
+                <p>Precise <strong>bookkeeping</strong> services and cost-effective <strong>financial services.</strong> Streamline your financials and focus on growth with our expert support.</p>
+            </div>
+            <div class="slide-image">
+                <img src="assets/Vector-slider-1.svg" alt="Imagen 1">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-text">
+                <p>unlock your business potential with <strong>Palu Group´s experts bookkeeping services.</strong> Streamline your finances, reduce stress, and focus on growth with our tailored solutions.
+            </div>
+            <div class="slide-image">
+                <img src="assets/Bill-Logo.svg" alt="Imagen 2">
+            </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
+              <p>Unlock your business potential with expert <strong>bookkeeping services.</strong> Streamline your finances, reduce stress, and focus on <strong>growth with our tailored solutions.</strong></p>
+          </div>
+          <div class="slide-image">
+              <img src="assets/icons-xero.svg" alt="Imagen 2">
+          </div>
+      </div>
+        <!-- Añadir más slides según sea necesario -->
+    </div>
+    <div class="slider-nav">
+        <span class="nav-dot active"></span>
+        <span class="nav-dot"></span>
+        <span class="nav-dot"></span>
+        <!-- Añadir más puntos según el número de slides -->
+    </div>
+
+</section>
+
+<section class="content-btn-slide">
+
+  <div class="boton-slide">
+    <div><a class="txtboton-slide" href="https://www.google.com">Book a Meeting</a></div>
+    <img loading="lazy" src="assets/icon-book.svg" style="width: 25px; height: 25px;" class="img-2" />
+  </div>
+
+</section>
+
+
+
+
+<div class="card-container">
+  <div class="card">
+      <div class="card-image">
+          <img src="assets/img-card.png" alt="Imagen 1">
+      </div>
+      <div class="card-content-one">
+          <h3 class="card-title">Bookkeeping</h3>
+          <h4 class="card-subtitle">Accurate and Reliable Financial Tracking</h4>
+          <p class="card-description">Our expert bookkeeping services ensure your financial records are meticulously maintained, giving you peace of mind and allowing you to focus on your business growth.</p>
+      </div>
+  </div>
+
+  <div class="card card-reverse">
+      <div class="card-content-two">
+          <h3 class="card-title">Accounting</h3>
+          <h4 class="card-subtitle">Comprehensive Financial Management</h4>
+          <p class="card-description">We offer detailed accounting services, providing clear financial insights and reports that help you make informed decisions.</p>
+      </div>
+      <div class="card-image">
+          <img src="assets/img-card2.png" alt="Imagen 2">
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="assets/img-card3.png" alt="Imagen 3">
+      </div>
+      <div class="card-content-three">
+          <h3 class="card-title">Payroll Management</h3>
+          <h4 class="card-subtitle">Seamless and Compliant Payroll Processing</h4>
+          <p class="card-description">Our payroll management services handle everything from calculations to compliance, ensuring your employees are paid accurately and on time, every time.</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+ 
+  <script src="slider.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
