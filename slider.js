@@ -25,3 +25,14 @@ document.querySelectorAll('.nav-dot').forEach((dot, index) => {
 
 setInterval(nextSlide, 5000);
 
+
+
+document.querySelectorAll('.faq-title').forEach(faq => {
+    faq.addEventListener('click', () => {
+      const parent = faq.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
+  
+  
+  
