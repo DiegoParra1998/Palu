@@ -271,22 +271,28 @@ dd {
   height: 100%;
 }
 
+@media screen and (max-width: 550px) {
+  .div-10 {
+      max-width: 90%;
+  }
+}
+
 .container {
   display: flex;
   min-width: 240px;
   width: 679px;
-  height: 580px;
   flex-direction: column;
   overflow: hidden;
-  justify-content: space-between;
   flex: 1;
   flex-basis: 0%;
+  gap: 31px;
 }
 
 @media (max-width: 991px) {
   .container {
     max-width: 100%;
     display: table-column;
+    height: auto;
   }
 }
 
@@ -379,6 +385,7 @@ dd {
   flex-wrap: wrap;
   justify-content: space-between; 
   gap: 10px; 
+  width: 100%;
 }
 
 .boton-1 {
@@ -470,7 +477,7 @@ gap: 15px;
   border-radius: 10px;
   align-self: stretch;
   display: flex;
-  min-width: 240px;
+  min-width: 270px;
   align-items: end;
   gap: 15px;
   overflow: hidden;
@@ -503,6 +510,7 @@ gap: 15px;
 display: flex;
 padding: 20px 80px;
 gap: 15px;
+font-size: 24px;
 }
 }
 
@@ -575,10 +583,23 @@ gap: 15px;
 @media (max-width: 991px) {
   .img-5 {
     max-width: 100%;
-    margin-left: 50px;
     margin-top: 20px;
   }
 }
+
+.container .img-5 {
+  margin-left: 67px;
+}
+
+@media screen and (max-width: 550px) {
+  .container .img-5 {
+    margin-left: 10px;
+  }
+}
+
+
+
+
 
 /* SLIDER */
 
@@ -620,6 +641,10 @@ flex-shrink: 0;
   .slide{
     display:block;
     min-height: 400px;
+  }
+
+  .slider{
+    padding: 20px;
   }
 }
 
@@ -1042,7 +1067,7 @@ p.about-text {
 .footer-container {
   max-width: 1235px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 14px;
 }
 
 .footer-top {

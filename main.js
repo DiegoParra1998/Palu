@@ -33,3 +33,16 @@ function sendMessage() {
         alert('Please enter a message before sending.');
     }
 }
+
+
+const words = ["drive", "scale", "grow"];
+const highlightElement = document.querySelector('.highlight');
+let currentIndex = 0;
+
+setInterval(() => {
+    // Update the word in the highlighted element
+    highlightElement.textContent = words[currentIndex];
+
+    // Move to the next word, cycling back to the start
+    currentIndex = (currentIndex + 1) % words.length;
+}, 2000);
