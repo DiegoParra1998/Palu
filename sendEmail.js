@@ -14,11 +14,12 @@
    emailjs.sendForm(serviceID, templateID, this).then(
      (response) => {
        console.log("SUCCESS!", response.status, response.text);
-       alert("SUCCESS!");
+       document.querySelector('.success-message1').style.display = 'block';
+       
      },
      (error) => {
        console.log("FAILED...", error);
-       alert("FAILED...", error);
+       
      }
    );
  });

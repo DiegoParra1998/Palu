@@ -97,12 +97,14 @@
           </div>
 
           <div class="div-12">
+            
             <div class="buttons-row">
               <div class="button-container1">
                 <button class="btn1" onclick="transformButton1()">
                   Get in touch <img src="assets/icon-message.svg" alt="" />
                 </button>
               </div>
+
 
               <form id="myForm" class="input-container1">
                 <input
@@ -112,7 +114,7 @@
                   placeholder="Type your email here..."
                   required
                 />
-                <button type="submit">
+                <button type="submit" class="button">
                   <img
                     style="padding-top: 5px"
                     src="assets/icon-send-black.svg"
@@ -127,10 +129,7 @@
                 />
               </form>
 
-              <div class="success-message1" id="successMessage1">
-                Your message has been <br />
-                <b>sent successfully!</b>
-              </div>
+            
 
               <script src="buttonScript.js"></script>
               <div class="boton-2-2">
@@ -146,6 +145,12 @@
                   class="img-4"
                 />
               </div>
+
+              
+            </div>
+            <div class="success-message1" id="successMessage1">
+              Your message has been <br />
+              <b>sent successfully!</b>
             </div>
           </div>
         </div>
@@ -423,7 +428,7 @@
              Your message has been <br> <b>sent successfully!</b>
            </div>
   
-           <script src="buttonScript.js"></script>
+           <script src="buttonScript.js" type="module"></script>
          </div>
          </div>
   
@@ -459,6 +464,12 @@
   <script src="slider.js"></script>
   <script src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script type="text/javascript" src="./sendEmail.js"></script>
+
   </body>
   
   </html>

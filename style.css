@@ -363,13 +363,14 @@ dd {
 .div-12 {
   display: flex;
   min-height: 73px;
-  width: 100%;
+  width: 109%;
   align-items: start;
   gap: 0px;
   overflow: hidden;
   font-size: 25px;
   justify-content: start;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 @media (max-width: 991px) {
@@ -385,14 +386,14 @@ dd {
 
 .buttons-row {
   display: flex;
-  height: auto;
-  flex-wrap: wrap;
+  /* height: auto; */
+  /* flex-wrap: wrap; */
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 50px;
+  gap: 20px;
   /* width: 100%;*/
 }
-@media (max-width: 991px) {
+
+/* @media (max-width: 991px) {
 .buttons-row {
   display: flex;
   height: auto;
@@ -400,9 +401,8 @@ dd {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
-  /* width: 100%;*/
 }
-}
+} */
 
 
 .boton-1 {
@@ -442,13 +442,12 @@ dd {
   border-radius: 10px;
   align-self: stretch;
   display: flex;
-  min-width: 240px;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
   overflow: hidden;
   background-color: rgba(24, 41, 48, 1);
   color: var(--White, #fff) !important;
-  justify-content: start;
+  justify-content: center;
   padding: 20px 25px;
   border: 2px solid rgba(24, 41, 48, 1);
   transition: all 0.5s ease-in-out;
@@ -524,7 +523,7 @@ dd {
 }
 
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
 .button-container1,
 .input-container1 {
   display: flex;
@@ -533,7 +532,7 @@ dd {
   width: 100%;
 }
 }
-
+ */
 
 @media (max-width: 991px) {
 .btn1 {
@@ -554,20 +553,23 @@ dd {
   position: relative;
   transition: all 1s ease-in-out;
   animation: fadeIn 1s;
-  justify-content: center;
-  min-width: 240px;
-  padding-top: 8px;
+  justify-content: start;
 }
 
 .input-container1 input[type="email"] {
-  padding: 20px 25px;
-  gap: 15px;
-  font-size: 16px;
   border-radius: 10px;
-  border: 2px solid #6cb19b;
-  outline: none;
-  width: 300px;
-  min-width: 240px;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  overflow: hidden;
+  color: #182930;
+  justify-content: start;
+  padding: 20px 25px;
+  font: 400 25px DM Sans, sans-serif;
+  border: 2px solid rgba(88, 129, 191, 1);
+  font-family: "DM Sans";
+  transition: all 0.5s ease-in-out;
 }
 
 .input-container1 ::placeholder {
@@ -577,16 +579,17 @@ dd {
   font-weight: 300;
 }
 
-.input-container1 button {
+.button {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 0%;
+  top: 57%;
   transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
   color: #007bff;
   font-size: 18px;
+
 }
 
 .success-message1 {
@@ -1223,10 +1226,12 @@ p.about-text {
   padding: 60px 0;
   font-family: 'DM Sans', sans-serif;
   width: 100%;
+  display: flex;
+  justify-content:center;
 }
 
 .footer-container {
-  max-width: 100%;
+  max-width: 94%;
     display: flex;
     justify-content: center;
     padding: 40px 0px;
