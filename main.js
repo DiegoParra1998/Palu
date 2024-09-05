@@ -46,3 +46,32 @@ setInterval(() => {
     // Move to the next word, cycling back to the start
     currentIndex = (currentIndex + 1) % words.length;
 }, 2000);
+
+
+
+
+// TOP BOTON 
+// Obtener el botón
+const topButton = document.getElementById("topButton");
+
+// Mostrar el botón cuando el usuario haya bajado a la mitad de la página
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const halfPage = document.documentElement.scrollHeight / 9;
+
+    // Si el scroll ha llegado a la mitad de la página, mostramos el botón
+    if (document.body.scrollTop > halfPage || document.documentElement.scrollTop > halfPage) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+}
+
+// Al hacer clic, ir arriba
+topButton.addEventListener("click", function() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+});
