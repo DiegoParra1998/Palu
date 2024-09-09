@@ -177,20 +177,21 @@ section[id] {
   border-radius: 10px;
   align-self: stretch;
   display: flex;
-  min-width: 240px;
   align-items: end;
   gap: 15px;
   overflow: hidden;
   color: #182930;
-  justify-content: start;
+  justify-content: center;
   padding: 20px 25px;
   font: 400 25px DM Sans, sans-serif;
   border: 2px solid rgba(88, 129, 191, 1);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 991px) {
   .boton-2 {
     border-radius: 10px;
     align-self: stretch;
@@ -200,7 +201,7 @@ section[id] {
     gap: 15px;
     overflow: hidden;
     color: #ffffff;
-    justify-content: start;
+    justify-content: center;
     font: 400 25px DM Sans, sans-serif;
     border: 2px solid rgba(88, 129, 191, 1);
     transition: all 0.5s ease-in-out;
@@ -329,14 +330,20 @@ dd {
   .div-11 {
     max-width: 100%;
     margin-top: 10px;
-    font-size: 40px;
+    font-size: 28.5px;
   }
 }
 
+.bookkeeping-and span {
+  font-weight: 700;
+  color: var(--color-main);
+}
+
 @media (max-width: 991px) {
-  .bookkeeping-and {
+  .bookkeeping-and span {
     max-width: 100%;
-    font-size: 36px;
+    font-weight: 400;
+    color: var(--color-main);
   }
 }
 
@@ -344,13 +351,15 @@ dd {
   .financial-services {
     max-width: 100%;
     font-size: 32px;
+    color: var(--color-main);
   }
 }
 
-.heading-desktop {
+.heading-desktop span {
   width: 100%;
   overflow: hidden;
   color: var(--Color-1, #182930);
+
 }
 
 @media (max-width: 991px) {
@@ -429,6 +438,11 @@ dd {
   .boton-1 {
     padding: 0 20px;
   }
+
+  a.boton-2-2 div {
+    width: 57%;
+    display: flex;
+}
 }
 
 .img-3 {
@@ -451,6 +465,7 @@ dd {
   padding: 20px 25px;
   border: 2px solid rgba(24, 41, 48, 1);
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 .boton-2-2:hover {
@@ -460,6 +475,12 @@ dd {
   color: #fff;
   text-decoration: none;
 }
+
+img.img-4 {
+  position: relative;
+  top: 3px;
+}
+
 
 .txtboton-2-2 {
   color: #fff;
@@ -499,7 +520,7 @@ dd {
   gap: 15px;
   overflow: hidden;
   color: #182930;
-  justify-content: start;
+  justify-content: center;
   margin: auto 0;
   padding: 20px 25px;
   font: 400 25px DM Sans, sans-serif;
@@ -509,10 +530,22 @@ dd {
 }
 
 .btn1:hover {
-  background-color: #6cb19b;
+  background-color: var(--color-main);
   color: #fff;
   transition: all 0.5s ease-in-out;
   border-color: transparent;
+  
+}
+
+.btn1:hover img{
+  content: url('assets/msg-blanco.svg');
+  width: 29px;
+  height: 29px;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  border-color: transparent;
+  
+  
 }
 
 .button-container1,
@@ -658,10 +691,37 @@ dd {
 .slider-title {
   text-align: center;
   margin: 20px 0;
+  font-size: 55px;
+  font-style: normal;
+  line-height: normal;
+  color: var(--color-main);
+}
+
+.text-services{
+  text-align: center;
+  margin: 20px 0;
   font-size: 35px;
   font-style: normal;
   line-height: normal;
+  color: var(--color-main);
+  padding: 20px 0px
+
 }
+
+@media (max-width: 991px) {
+  .text-services {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--color-main);
+    padding: 10px 0px;
+    width: 100%;
+}
+  
+}
+
 
 .slider {
 display: flex;
@@ -774,13 +834,12 @@ margin-right: 10%;
   border-radius: 10px;
   align-self: stretch;
   display: flex;
-  min-width: 240px;
   align-items: end;
   gap: 15px;
   overflow: hidden;
   color: #ffffff;
   background-color: #182930;
-  justify-content: start;
+  justify-content: center;
   padding: 20px 25px;
   font: 400 25px DM Sans, sans-serif;
   border: 2px solid rgba(88, 129, 191, 1);
@@ -863,7 +922,7 @@ margin-right: 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   width: 100%;
-  max-width: 84%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -911,7 +970,7 @@ margin-right: 10%;
 
 
 .card-content-two {
-  flex: 1;
+  flex: 0.878;
   background-color: #EEFDFF; /* Fondo azul */
   color: #182930;
   padding: 20px;
@@ -960,6 +1019,10 @@ margin-right: 10%;
 .card-title {
   margin: 0;
   font-size: 55px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media (max-width: 991px) {
@@ -973,7 +1036,8 @@ margin-right: 10%;
   margin: 5px 0;
   font-size: 35px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 35px;
+  width: 82%;
 }
 
 @media (max-width: 991px) {
@@ -988,8 +1052,9 @@ margin-right: 10%;
 
 .card-description {
   margin: 10px 0 0 0;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
+  width: 70%;
 }
 
 
@@ -999,6 +1064,7 @@ margin-right: 10%;
     font-size: 17px;
     font-weight: 400;
     line-height: normal;
+    width: 100%;
   }
 }
 
@@ -1036,9 +1102,9 @@ margin-right: 10%;
 }
 
 .about-title {
-  font-size: 28px;
   margin-bottom: 20px;
-  color: #2D3E50;
+  font-weight: 700;
+  color: #182930;
 }
 .about-text {
   margin-bottom: 20px;
@@ -1158,7 +1224,7 @@ p.about-text {
 }
 
 .faq-title h3 {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   color: #182930;
@@ -1201,6 +1267,7 @@ p.about-text {
 
 .faq-content p {
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .faq.active .faq-content {
@@ -1219,161 +1286,111 @@ p.about-text {
 
 /*FOOTER*/
 
-/* General Footer Styles */
-.footer {
-  background-color: #1c2b32;
-  color: white;
-  padding: 60px 0;
-  font-family: 'DM Sans', sans-serif;
-  width: 100%;
-  display: flex;
-  justify-content:center;
-}
 
-.footer-container {
-  max-width: 94%;
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px;
-}
-
-.footer-top {
+.col-md-6.text-md-end {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  width: 35%;
+  text-decoration: underline;
 }
 
-.footer-logo-text {
+.col-lg-3.col-md-6.text-lg-end.text-md-start.mt-4.mt-md-0 {
   display: flex;
-  align-items: center;
+  width: 22%;
 }
 
-.footer-logo {
-  max-height: 100px;
+.footer p {
+  font-size: 28.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.footer-description {
-width: 569px;
-font-family: "DM Sans";
-font-size: 28.5px;
+.footer p span {
+  font-size: 28.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #6CB19B;
+}
+
+@media (max-width: 767px) {
+.col-lg-3.col-md-6.text-lg-end.text-md-start.mt-4.mt-md-0 {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.col-md-6.text-md-end {
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: end;
+  justify-content: space-evenly;
+}
+
+footer.footer.bg-dark.text-light.py-5 {
+  padding: 0px 11px;
+}
+
+}
+
+p.text-copy {
+font-size: 15px;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: normal;
 }
 
 
 
-.get-in-touch {
-  border-radius: 10px;
-  align-self: stretch;
-  display: flex;
-  min-width: 240px;
-  align-items: end;
-  gap: 15px;
-  overflow: hidden;
-  color: #ffffff;
-  background-color: #182930;
-  justify-content: start;
-  padding: 20px 25px;
-  font: 400 25px DM Sans, sans-serif;
-  border: 2px solid rgba(88, 129, 191, 1);
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+/* General Footer Styles */
+.footer {
+  background-color: #0a2a30; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto claro */
+}
+
+.footer p {
+  color: #c0c8ce; /* Color del texto secundario */
+}
+
+.footer a {
+  color: #c0c8ce; /* Color de enlaces */
   text-decoration: none;
 }
 
-.get-in-touch:hover{
-  background-color: #6cb19b;
-  color: #fff;
-  transition: all 0.5s ease-in-out;
-  border-color: transparent;
+.footer a:hover {
+  color: #4bbf73; /* Color del hover en enlaces */
 }
 
-.get-in-touch i {
-  margin-left: 10px;
-  color: white;
+.footer .btn-success {
+  background-color: #4bbf73;
+  border-color: #4bbf73;
 }
 
-/* Footer Bottom */
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-top: 1px solid #324a54;
-  padding-top: 10px;
+.footer .btn-success:hover {
+  background-color: #3aa662;
+  border-color: #3aa662;
 }
 
-.footer-company {
-  margin: 0;
-  font-size: 14px;
+.footer .bi-envelope {
+  font-size: 1.2rem;
 }
 
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 14px;
-}
+@media (max-width: 767px) {
+  .footer .text-md-end {
+    text-align: center !important;
+  }
 
-.footer-links a:first-child {
-  margin-left: 0;
-}
+  .footer .text-lg-end {
+    text-align: center !important;
+  }
 
-.footer-links a:hover {
-  text-decoration: underline;
-}
-.btnfooter {
-  display: flex;
-  min-height: 73px;
-  width: 100%;
-  align-items: end;
-  gap: 50px;
-  overflow: hidden;
-  font-size: 25px;
-  justify-content: end;
-  flex-wrap: wrap;
-  margin-top: -73px;
-}
-
-@media (max-width: 991px) {
-  .btnfooter {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: end;
-    order: 3;
+  .footer .mt-md-0 {
+    margin-top: 1.5rem !important;
   }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .footer-top, .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-    order: 4;
-  }
-
-  .footer-button {
-    margin-top: 10px;
-    order: 4;
-  }
-
-  .footer-links {
-    margin-top: 10px;
-  }
-
-  .footer-description{
-    width: 100%;
-    font-size: 26px;
-    order: 2;
-  }
-
-}
 
 /* Estilos del botón */
 #topButton {
