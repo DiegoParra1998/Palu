@@ -152,6 +152,7 @@ section[id] {
   .nav.visible {
     opacity: 1;
     visibility: visible;
+    z-index: 1;
   }
 
   .nav-list {
@@ -922,8 +923,9 @@ margin-right: 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   width: 100%;
-  max-width: 85%;
+  max-width: 68%;
   margin: 0 auto;
+  height: 40vh;
 }
 
 .card-reverse {
@@ -1018,9 +1020,7 @@ margin-right: 10%;
 
 .card-title {
   margin: 0;
-  font-size: 55px;
-  margin: 0;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 500;
   line-height: normal;
 }
@@ -1034,7 +1034,7 @@ margin-right: 10%;
 
 .card-subtitle {
   margin: 5px 0;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 35px;
   width: 82%;
@@ -1054,7 +1054,7 @@ margin-right: 10%;
   margin: 10px 0 0 0;
   font-size: 20px;
   font-weight: 400;
-  width: 70%;
+  width: 95%;
 }
 
 
@@ -1073,6 +1073,9 @@ margin-right: 10%;
 @media (max-width: 768px) {
   .card {
       flex-direction: column; /* Apila la imagen y el contenido */
+      height: auto;
+      width: 100%;
+      max-width: 90%;
   }
   @media (max-width: 768px) {
   .card-reverse {
@@ -1120,6 +1123,12 @@ p.about-text {
   width: 470px;
     font-size: 19px;
     color: #182930;
+}
+h4.about-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (min-width: 992px) {
@@ -1377,19 +1386,116 @@ line-height: normal;
   font-size: 1.2rem;
 }
 
-@media (max-width: 767px) {
-  .footer .text-md-end {
-    text-align: center !important;
-  }
 
-  .footer .text-lg-end {
-    text-align: center !important;
-  }
+/* botón funcional footer de get in touch */
 
-  .footer .mt-md-0 {
-    margin-top: 1.5rem !important;
+/* Estilos para el botón en el footer */
+/* Estilos para el botón del footer */
+.btn1-footer {
+  border-radius: 10px;
+  align-self: stretch;
+  display: flex;
+  min-width: 270px;
+  align-items: flex-end;
+  gap: 15px;
+  overflow: hidden;
+  color: #182930;
+  justify-content: center;
+  margin: auto 0;
+  padding: 20px 25px;
+  font: 400 25px 'DM Sans', sans-serif;
+  border: 2px solid rgba(88, 129, 191, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn1-footer:hover {
+  background-color: var(--color-main);
+  color: #fff;
+  border-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn1-footer:hover img {
+  content: url('assets/msg-blanco.svg');
+  width: 29px;
+  height: 29px;
+  display: flex;
+  border-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-container-footer,
+.input-container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .button-container-footer,
+  .input-container-footer {
+    width: 100%;
   }
 }
+
+@media (max-width: 991px) {
+  .btn1-footer {
+    font-size: 24px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.input-container-footer input {
+  flex: 1;
+}
+
+.input-container-footer {
+  display: none;
+  position: relative;
+  justify-content: start;
+  transition: all 1s ease-in-out;
+  animation: fadeIn 1s;
+}
+
+.input-container-footer input[type="email"] {
+  border-radius: 10px;
+  padding: 20px 25px;
+  font: 400 25px 'DM Sans', sans-serif;
+  border: 2px solid rgba(88, 129, 191, 1);
+  color: #182930;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container-footer ::placeholder {
+  color: #182930;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.success-message-footer {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  color: #28a745;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Si es necesario, ajusta los estilos del botón de envío en el footer */
+.button-footer {
+  position: absolute;
+  top: 57%;
+  right: 0%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+/* final de estilos btn footer */
 
 
 /* Estilos del botón */

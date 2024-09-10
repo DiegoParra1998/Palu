@@ -59,7 +59,7 @@
             <li><a href="/#aboutus">About Us</a></li>
             <li><a href="/#section-4">FAQ</a></li>
           </ul>
-          <a class="boton-2" href="https://calendly.com/palugroup-info/30min">
+          <a class="boton-2" href="https://calendly.com/palugroup-info/30min" target="_blank">
             <div>
               <span class="txtboton-2">Book a Meeting</span>
               <img
@@ -95,8 +95,7 @@
             </div>
           </div>
 
-          <div class="div-12">
-            
+          <div class="div-12"> 
             <div class="buttons-row">
               <div class="button-container1">
                 <button class="btn1" id="btn1">
@@ -132,7 +131,7 @@
 
               <script src="buttonScript.js" type="module"></script>
 
-              <a class="boton-2-2" href="https://calendly.com/palugroup-info/30min">
+              <a class="boton-2-2" href="https://calendly.com/palugroup-info/30min" target="_blank">
                 <div>
                   <span class="txtboton-2-2">Book a Meeting</span>
                   <img
@@ -221,7 +220,7 @@
   </div>
   <section class="content-btn-slide">
     <div class="boton-slide">
-      <div><a class="txtboton-slide" href="https://calendly.com/palugroup-info/30min">Book a Meeting</a></div>
+      <div><a class="txtboton-slide" href="https://calendly.com/palugroup-info/30min" target="_blank">Book a Meeting</a></div>
       <img loading="lazy" src="assets/icon-book.svg" style="width: 25px; height: 25px;" class="img-2" />
     </div>
   </section>
@@ -320,7 +319,7 @@
         </div>
         <div class="col-12 col-lg-6 d-flex align-items-center">
             <div>
-                <h1 class="about-title">Why Us</h1>
+                <h4 class="about-title">Why Us</h4>
                 <p class="about-text">
                     We believe that trust and accountability create the perfect culture to enjoy every journey we take with our customers.
                 </p>
@@ -334,7 +333,7 @@
   
   <section class="content-btn-slide">
     <div class="boton-slide">
-      <div><a class="txtboton-slide" href="https://calendly.com/palugroup-info/30min">Book a Meeting</a></div>
+      <div><a class="txtboton-slide" href="https://calendly.com/palugroup-info/30min" target="_blank">Book a Meeting</a></div>
       <img loading="lazy" src="assets/icon-book.svg" style="width: 25px; height: 25px;" class="img-2" />
     </div>
   </section>
@@ -404,6 +403,10 @@
   
   
   
+  <button id="topButton" title="Ir Arriba">
+    <img src="assets/Top-btn.svg" alt="" />
+   </button>
+
   <!-- Footer -->
   <footer class="footer bg-dark text-light py-5">
     <div class="container">
@@ -418,46 +421,41 @@
   
         <!-- Button -->
         <div class="col-lg-3 col-md-6 text-lg-end text-md-start mt-4 mt-md-0">            
-            <div class="buttons-row">
-              <div class="button-container1">
-                <button class="btn1" id="btn1">
-                  Get in touch <img src="assets/icon-message.svg" alt="" />
-                </button>
+          <div class="buttons-row">
+              <div class="button-container-footer">
+                  <button class="btn1 btn1-footer" id="btn1-footer">
+                      Get in touch <img src="assets/icon-message.svg" alt="" />
+                  </button>
               </div>
-
-
-              <form id="myForm" class="input-container1">
-                <input
-                  type="email"
-                  name="user_email"
-                  id="user_email"
-                  placeholder="Type your email here..."
-                  required
-                />
-                <button type="submit" class="button">
-                  <img
-                    style="padding-top: 5px"
-                    src="assets/icon-send-black.svg"
-                    alt=""
+      
+              <form id="myForm-footer" class="input-container-footer">
+                  <input
+                      type="email"
+                      name="user_email"
+                      id="messageInputFooter"
+                      placeholder="Type your email here..."
+                      required
                   />
-                </button>
-
-                <input
-                  type="hidden"
-                  name="_feedback.success.title"
-                  value="Thanks, go back to our website"
-                />
+                  <button type="submit" class="button-footer">
+                      <img
+                          style="padding-top: 5px"
+                          src="assets/icon-send-black.svg"
+                          alt=""
+                      />
+                  </button>
+      
+                  <input
+                      type="hidden"
+                      name="_feedback.success.title"
+                      value="Thanks, go back to our website"
+                  />
               </form>
-
-            
-
-              <script src="buttonScript.js" type="module"></script>
-            </div>
-            <div class="success-message1" id="successMessage1">
+          </div>
+          <div class="success-message-footer" id="successMessageFooter">
               Your message has been <br />
               <b>sent successfully!</b>
-            </div>
-        </div>
+          </div>
+      </div>
         </div>
   
       <div class="row mt-5 justify-content-between align-items-center">
