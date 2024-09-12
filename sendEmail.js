@@ -1,25 +1,24 @@
-//  listen to the form submission
- document
- .getElementById("myForm")
- .addEventListener("submit", function (event) {
-   event.preventDefault();
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Evitar el comportamiento por defecto del formulario
 
-   const serviceID = "service_cm8n8on";
-   const templateID = "template_5nx0n2r";
-   const public_key = "4zJZIzjY1xmA8iB4L"
+    var formData = new FormData(this);
 
-   // Obtener el correo del usuario
-   emailjs.init(public_key); 
-   // send the email here
-   emailjs.sendForm(serviceID, templateID, this).then(
-     (response) => {
-       console.log("SUCCESS!", response.status, response.text);
-       document.querySelector('.success-message1').style.display = 'block';
-       
-     },
-     (error) => {
-       console.log("FAILED...", error);
-       
-     }
-   );
- });
+    fetch("send-email.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          console.log("Éxito:", data.success);
+          document.querySelector(".success-message1").style.display = "block";
+        } else if (data.error) {
+          console.error("Error:", data.error);
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  });
